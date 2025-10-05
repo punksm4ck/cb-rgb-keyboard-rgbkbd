@@ -1,0 +1,47 @@
+# Ignore Python cache and bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore backup files (anywhere in the name or extension)
+*backup*
+*.backup
+
+# Ignore build output
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.d
+*.so
+*.bin
+
+# Ignore virtual environments and common names
+venv/
+.venv/
+myenv/
+rgb-env/
+
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore editor/IDE/project files
+.vscode/
+.idea/
+*.swp
+
+# Ignore test output, coverage, etc.
+htmlcov/
+.coverage
+coverage.xml
+
+# Ignore tree file if you don't want it versioned
