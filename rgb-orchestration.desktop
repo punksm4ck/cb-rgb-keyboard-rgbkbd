@@ -2,7 +2,7 @@
 Name=RGB Orchestration
 Comment=Launch the RGB Orchestration Suite
 Exec=rgbgui
-Icon=utilities-terminal
+Icon=rgb_controller_splash
 Terminal=false
 Type=Application
 Categories=Utility;Graphics;

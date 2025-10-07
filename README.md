@@ -10,29 +10,17 @@ A modular, multi-zone RGB control platform for Linux — built for precision, ex
 - 🌐 MQTT/WebSocket sync for collaborative control
 - 🧰 Modular plugin architecture with secure profiles
 - 📦 Clean installer with dependency automation
+- 🖼️ Splash screen and desktop launcher integration
 
 ## 🛠️ Installation
-1. Download and extract the archive:
+1. Run the installer script:
    ```bash
-   curl -L -o rgb-orchestration-v5.3.0.tar.gz https://github.com/punksm4ck/cb-rgb-keyboard-rgbkbd/releases/download/v5.3.0/rgb-orchestration-v5.3.0.tar.gz
-   tar -xzvf rgb-orchestration-v5.3.0.tar.gz
-   cd rgb_release
+   bash rgb_installer.sh
    ```
 
-2. Install dependencies:
-   ```bash
-   bash install_rgb_dependencies.sh
-   ```
-
-3. Launch the app:
+2. Launch the app:
    ```bash
    rgbgui
-   ```
-
-## 🖥️ Add to App Menu
-To add RGB Orchestration to your system menu:
-   ```bash
-   cp rgb-orchestration.desktop ~/.local/share/applications/
    ```
 
 ## 📣 Contribute
