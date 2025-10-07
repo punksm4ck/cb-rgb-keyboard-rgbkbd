@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=RGB Orchestration
+Comment=Launch the RGB Orchestration Suite
+Exec=rgbgui
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=Utility;Graphics;

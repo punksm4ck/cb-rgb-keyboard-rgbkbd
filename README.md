@@ -29,6 +29,12 @@ A modular, multi-zone RGB control platform for Linux — built for precision, ex
    rgbgui
    ```
 
+## 🖥️ Add to App Menu
+To add RGB Orchestration to your system menu:
+   ```bash
+   cp rgb-orchestration.desktop ~/.local/share/applications/
+   ```
+
 ## 📣 Contribute
 Pull requests welcome! For major changes, open an issue first.
 
