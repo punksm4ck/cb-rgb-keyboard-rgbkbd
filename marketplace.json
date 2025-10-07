@@ -1,0 +1,12 @@
+[
+  {
+    "name": "rainbow_wave",
+    "description": "Creates a flowing rainbow effect across zones.",
+    "url": "https://raw.githubusercontent.com/punksm4ck/cb-rgb-keyboard-rgbkbd/main/plugins/rainbow_wave.py"
+  },
+  {
+    "name": "audio_sync",
+    "description": "Syncs RGB effects to system audio.",
+    "url": "https://raw.githubusercontent.com/punksm4ck/cb-rgb-keyboard-rgbkbd/main/plugins/audio_sync.py"
+  }
+]
