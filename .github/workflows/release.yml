@@ -1,0 +1,36 @@
+name: Build and Release RGB Suite
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y python3-pip python3-tk libportaudio2 libpulse-dev libasound2-dev ffmpeg sox pavucontrol
+          pip3 install numpy sounddevice requests paho-mqtt imageio pillow matplotlib pygments flask
+
+      - name: Build tarball
+        run: |
+          chmod +x package_rgb_release.sh
+          ./package_rgb_release.sh
+
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v1
+        with:
+          files: rgb-orchestration-v5.3.0.tar.gz
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
