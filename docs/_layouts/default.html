@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>{{ site.title }}</h1>
+      <input type="text" id="search-input" placeholder="Search docs...">
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <script>
+      SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.createElement('div'),
+        json: '/search.json'
+      });
+    </script>
+  </body>
+</html>
