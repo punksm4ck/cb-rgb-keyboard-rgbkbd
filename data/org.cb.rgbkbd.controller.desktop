@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=CB-RGBKBD-CONTROLLER
+Exec=launch
+Icon=org.cb.rgbkbd.controller
+Terminal=false
+Type=Application
+Categories=Utility;

@@ -1,0 +1,2 @@
+#!/bin/sh
+exec python3 -m cb_rgbkbd_controller.gui.main "$@"
